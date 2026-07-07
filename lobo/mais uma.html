@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidere a Alcateia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Barra do topo organizada com Flexbox */
+        header {
+            background-color: #437cb4; /* Tom de azul exato da imagem */
+            padding: 10px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            border-radius: 50px; /* Bordas arredondadas no topo */
+            margin: 20px 30px 0 30px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15); /* Sombra sutil para profundidade */
+        }
+
+        .nav-esquerda {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Logotipo redondo ajustado */
+        .logo-container {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #ffffff;
+            background-color: #1a2a4a;
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Links principais */
+        .menu-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .menu-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Área de login/cadastro alinhada à direita */
+        .auth-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .auth-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Área do Conteúdo Principal com Flexbox (Lado a Lado) */
+        main {
+            padding: 60px;
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            flex: 1; /* Garante que o main ocupe o espaço restante */
+        }
+
+        /* Bloco que segura apenas os textos */
+        .conteudo-texto {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif; /* Fonte com serifa */
+            font-size: 48px;
+            color: #d88911;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+
+        .descricao {
+            font-size: 20px;
+            color: #000000;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .chamada {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            letter-spacing: 1px;
+        }
+
+        /* Bloco da imagem do lobo à direita */
+        .imagem-bloco {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lobo-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    transform: scale(1.05); /* Leve aumento de tamanho para destaque */
+    filter: contrast(1.1); /* Dá uma leve realçada nos detalhes */
+    background-color: #437cb48a;; /* Garante que o fundo seja transparente */
+    border-radius: 20px; /* Bordas arredondadas para suavizar a imagem */
+}
+
+.botao-chamada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    color: #284733;
+    background-color: #d88911;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+        /* Rodapé ajustado */
+        footer {
+            background-color: #437cb4;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none; 
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-esquerda">
+            <div class="logo-container">
+                <img class="logo-img" src="Gemini_Generated_Image_82m4l782m4l782m4.png" alt="Logo">
+            </div>
+            <nav class="menu-links">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+        
+        <div class="auth-links">
+            <a href="#">Entrar</a>
+            <a href="#">Cadastrar-se</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteudo-texto">
+            <h1>Lidere a Alcateia.<br>Crie seu Futuro.</h1>
+            
+            <p class="descricao">
+                Ferramentas poderosas para criadores de conteúdo e gamers construírem legados, não apenas seguidores. É hora de mais engajamento.
+            </p>
+           <div class="botao-chamada">
+            <button class="botao-chamada">FAÇA PARTE DA ALCATEIA</button>
+            </div>
+        </div>
+
+        <div class="imagem-bloco">
+            <img class="lobo-img" src="Copilot_20260630_210444.png" alt="Lobo Cibernético">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alcateia. Todos os direitos reservados.</p>
+        <a href="#">home</a>
+        <a href="#">sobre</a>
+        <a href="#">contato</a>
+        <a href="#">política de privacidade</a>
+    </footer>
+
+</body>
+</html>
